@@ -1,0 +1,18 @@
+<p>manage-assistant works!</p>
+<form [formGroup]="assistantForm" (ngSubmit)="save()">
+    <div class="mb-3">
+        <label class="form-label" for="firstName">First Name</label>
+        <input class="form-control" type="text" placeholder="First Name" name="firstName" formControlName="firstName">     
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="lastName">Last Name</label>
+        <input class="form-control" type="text" placeholder="Last Name" name="lastName" formControlName="lastName">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="email">E bmail</label>
+        <input class="form-control" type="text" placeholder="E-mail" name="email" formControlName="email"> 
+    </div>
+    <div class="mb-3">
+        <input class="btn btn-primary" type="submit" value="Create">
+    </div>
+</form>
